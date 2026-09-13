@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Portfolio Regi</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Regi Heksa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active px-lg-4" aria-current="page" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="report.html">Report</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Section Portfolio -->
+    <section class="portofolio">
+      <div class="container py-5 text-center">
+        <h1 class="text-center fw-bold">My Work</h1>
+        <p class="pb-3 fs-5">All of my projects, my work, and my creativity.</p>
+        <div class="control pb-5">
+          <ul>
+            <li class="button active mx-1" data-filter="filter">All</li>
+            <li class="button mx-1" data-filter="programing">Programing</li>
+            <li class="button mx-1" data-filter="design">Design & Editing</li>
+            <li class="button mx-1" data-filter="photography">Photography</li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 pb-4">
+            <div class="item">
+              <div class="card-porto">
+                <img src="img/carousel/coding1.jpg" class="card-img-top img-fluid filter programing" alt="" />
+                <span class="search-icon"><i class="bi bi-search" data-bs-toggle="modal" data-bs-target="#portofoliomodal1"></i></span>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Web Design</strong><br />
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                  </p>
+                  <span class="badge bg-primary">Programing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 pb-4">
+            <div class="item">
+              <div class="card-porto">
+                <img src="img/carousel/coding2.jpg" class="card-img-top img-fluid filter programing" alt="" />
+                <span class="search-icon"><i class="bi bi-search" data-bs-toggle="modal" data-bs-target="#portofoliomodal2"></i></span>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Web programing</strong><br />
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                  </p>
+                  <span class="badge bg-primary">Programing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 pb-4">
+            <div class="item">
+              <div class="card-porto">
+                <img src="img/carousel/photography1.jpg" class="card-img-top img-fluid filter photography" alt="" />
+                <span class="search-icon"><i class="bi bi-search" data-bs-toggle="modal" data-bs-target="#portofoliomodal3"></i></span>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Street Photography</strong><br />
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                  </p>
+                  <span class="badge bg-success">Photography</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 pb-4">
+            <div class="item">
+              <div class="card-porto">
+                <img src="img/carousel/photography2.jpg" class="card-img-top img-fluid filter photography" alt="" />
+                <span class="search-icon"><i class="bi bi-search" data-bs-toggle="modal" data-bs-target="#portofoliomodal4"></i></span>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Food Photography</strong><br />
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                  </p>
+                  <span class="badge bg-success">Photography</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 pb-4">
+            <div class="item">
+              <div class="card-porto">
+                <img src="img/carousel/editing1.jpg" class="card-img-top img-fluid filter design" alt="" />
+                <span class="search-icon"><i class="bi bi-search" data-bs-toggle="modal" data-bs-target="#portofoliomodal5"></i></span>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Video Editing</strong><br />
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                  </p>
+                  <span class="badge bg-info">Design & Editing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 pb-4">
+            <div class="item">
+              <div class="card-porto">
+                <img src="img/carousel/editing2.jpg" class="card-img-top img-fluid filter design" alt="" />
+                <span class="search-icon"><i class="bi bi-search" data-bs-toggle="modal" data-bs-target="#portofoliomodal6"></i></span>
+                <div class="card-body">
+                  <p class="card-text">
+                    <strong>Designing</strong><br />
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                  </p>
+                  <span class="badge bg-info">Design & Editing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#414a37"
+          fill-opacity="1"
+          d="M0,64L48,69.3C96,75,192,85,288,117.3C384,149,480,203,576,202.7C672,203,768,149,864,138.7C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- End of Section Portfolio -->
+
+    <!-- Modal -->
+    <div class="portofolio-modal modal fade mt-5" id="portofoliomodal1" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-body text-center">
+            <div class="container-fluid py-3">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="card-porto">
+                    <img src="img/carousel/coding1.jpg" class="card-img-top img-fluid" alt="" />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>Web Programing</strong><br />
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                      </p>
+                      <span class="badge bg-primary">Programing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portofolio-modal modal fade mt-5" id="portofoliomodal3" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-body text-center">
+            <div class="container-fluid py-3">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="card-porto">
+                    <img src="img/carousel/photography1.jpg" class="card-img-top img-fluid" alt="" />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>Street Photography</strong><br />
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                      </p>
+                      <span class="badge bg-success">Photography</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portofolio-modal modal fade mt-5" id="portofoliomodal4" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-body text-center">
+            <div class="container-fluid py-3">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="card-porto">
+                    <img src="img/carousel/photography2.jpg" class="card-img-top img-fluid" alt="" />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>Food Photography</strong><br />
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                      </p>
+                      <span class="badge bg-success">Photography</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portofolio-modal modal fade mt-5" id="portofoliomodal5" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-body text-center">
+            <div class="container-fluid py-3">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="card-porto">
+                    <img src="img/carousel/editing1.jpg" class="card-img-top img-fluid" alt="" />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>Video Editing</strong><br />
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                      </p>
+                      <span class="badge bg-info">Design & Editing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portofolio-modal modal fade mt-5" id="portofoliomodal6" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-body text-center">
+            <div class="container-fluid py-3">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="card-porto">
+                    <img src="img/carousel/editing2.jpg" class="card-img-top img-fluid" alt="" />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>Designing</strong><br />
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                      </p>
+                      <span class="badge bg-info">Design & Editing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portofolio-modal modal fade mt-5" id="portofoliomodal2" aria-hidden="true" role="dialog">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-body text-center">
+            <div class="container-fluid py-3">
+              <div class="row justify-content-center">
+                <div class="col-lg-12">
+                  <div class="card-porto">
+                    <img src="img/carousel/coding2.jpg" class="card-img-top img-fluid" alt="" />
+                    <div class="card-body">
+                      <p class="card-text">
+                        <strong>Web Design</strong><br />
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, at!</small>
+                      </p>
+                      <span class="badge bg-primary">Programing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Modal -->
+
+    <script>
+      // Fungsi utama filter
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".control ul li.button");
+        const items = document.querySelectorAll(".row .col-lg-4"); // Target element: column yang berisi item
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // 1. Kelola Kelas Aktif (Siblings)
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            const filterValue = this.getAttribute("data-filter");
+
+            // 2. Logika Filtering
+            items.forEach((item) => {
+              // Cari img di dalam item
+              const img = item.querySelector("img.filter");
+
+              // Jika filterValue adalah 'All', tampilkan semua
+              if (filterValue === "filter" || filterValue === "All") {
+                // Catatan: Anda menggunakan 'filter' dan 'All' di HTML, saya asumsikan 'filter' adalah alias 'All'
+                item.style.display = "block";
+              }
+              // Jika tidak 'All', periksa apakah item mengandung kelas filter
+              else {
+                if (img && img.classList.contains(filterValue)) {
+                  // Tampilkan dengan transisi halus
+                  item.style.display = "block";
+                } else {
+                  // Sembunyikan
+                  item.style.display = "none";
+                }
+              }
+            });
+          });
+        });
+      });
+    </script>
+
+    <!-- Section Footer -->
+    <footer class="footer pb-3 text-center" style="background-color: #414a37">
+      <div class="container">
+        <h5>Regi Heksa Ananda</h5>
+        <p>For business inquiry, feel free to reach out via contact below.</p>
+        <div class="social-icons-footer">
+          <a href="https://www.linkedin.com/in/regi-heksa-462906320/"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Regi3051/"><i class="bi bi-github"></i></a>
+          <a href="https://wa.me/+6281261265154"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.instagram.com/_kur00__/"><i class="bi bi-instagram"></i></a>
+        </div>
+        <p><span class="fw-bold">Address: </span>Padang, Sumatera Barat</p>
+        <p class="email pb-4"><span class="fw-bold">Email: </span>heksa9012@gmail.com</p>
+        <p><small>© 2025 Regi Heksa Ananda. All rights reserved.</small></p>
+      </div>
+    </footer>
+    <!-- End of Section Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
