@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #2b332b;
+        color: #dbc2a6;
+      }
+      .report-hero {
+        margin-top: 5rem;
+        padding: 4rem 0 2rem 0;
+        text-align: center;
+      }
+      .report-hero h1 {
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #dbc2a6;
+      }
+      .report-hero .badge {
+        background-color: #99744a;
+        font-size: 0.9rem;
+        padding: 8px 15px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+      }
+      .report-hero p {
+        color: #aeb4a2;
+        margin-top: 10px;
+      }
+      .content-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+      }
+      .btn-laporan {
+        position: center;
+        background-color: transparent;
+        color: #dbc2a6;
+        font-weight: bold;
+        border: 2px solid #99744a;
+        width: 20%;
+        padding: 8px;
+        border-radius: 25px;
+        transition: 0.3s;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        margin: 25px auto;
+      }
+      .btn-laporan:hover {
+        background-color: #99744a;
+        color: #2b332b;
+      }
+
+      .step-card {
+        background-color: #414a37;
+        border: 1px solid #99744a;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      }
+      .step-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(219, 194, 166, 0.2);
+        padding-bottom: 15px;
+      }
+      .step-number {
+        background-color: #99744a;
+        color: #2b332b;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-right: 15px;
+      }
+      .step-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #dbc2a6;
+        margin: 0;
+      }
+      .step-body {
+        color: #e0d5c1;
+        line-height: 1.8;
+      }
+      .step-body p {
+        margin-bottom: 15px;
+      }
+      .step-body ul {
+        margin-bottom: 15px;
+      }
+      .step-image {
+        width: 100%;
+        border-radius: 8px;
+        border: 2px solid #2b332b;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      }
+    </style>
+    <title>Praktikum 3 Aplikasi Mobile - Portfolio Regi</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Regi Heksa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="portofolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active px-lg-4" aria-current="page" href="report.html">Report</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <section class="report-hero container">
+      <span class="badge">Praktikum Aplikasi Mobile</span>
+      <h1>Laporan Praktikum 3 Aplikasi Mobile</h1>
+      <p><i class="bi bi-person"></i> Regi Heksa Ananda</p>
+      <div class="mt-4">
+        <a href="https://github.com/Regi3051/PrakAppMob_B_2411533004" target="_blank" class="btn-laporan">
+          <i class="bi bi-github me-2"></i>Repository GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- Content Area -->
+    <section class="container content-wrapper">
+      
+      <h2 class="mb-4 text-center" style="color: #dbc2a6; font-weight: bold; border-bottom: 2px solid #99744a; padding-bottom: 10px; display: inline-block;">A. Langkah Praktikum</h2>
+      
+      <!-- Step 1 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Mengimpor Material Design & Class Stateful</h3>
+        </div>
+        <div class="step-body">
+          <p>Mengimpor material design dari library Flutter dan membuat class AddTransactionScreen yang berbasis StatefulWidget. Konsep stateful digunakan karena isi formulir (seperti teks input dan pilihan dropdown) akan memiliki state yang terus berubah saat terjadi interaksi dengan pengguna.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/1-AddTransactionScreen.png" alt="Mengimpor material design dan class AddTransactionScreen" class="step-image">
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Inisialisasi Class State</h3>
+        </div>
+        <div class="step-body">
+          <p>Menginisialisasi class State untuk layar formulir tersebut. Pada bagian ini, dideklarasikan GlobalKey&lt;FormState&gt; sebagai pengontrol utama form yang dapat memicu validasi, TextEditingController untuk membaca input judul dan nominal, serta inisialisasi awal nilai dropdown kategori. Fungsi dispose() juga dideklarasikan guna membersihkan controller dari memori untuk mencegah memory leak setelah layar ditutup.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/2-classAddTransactionScreenState.png" alt="Menginisialisasi class State" class="step-image">
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Membangun Kerangka UI</h3>
+        </div>
+        <div class="step-body">
+          <p>Membangun kerangka UI (User Interface) menggunakan Scaffold dengan tampilan AppBar. Bagian body utama dibungkus dengan SingleChildScrollView untuk menghindari error overflow pada layout saat layar mengecil akibat munculnya keyboard virtual. Di dalam scrollView tersebut, disematkan widget Form yang telah dikaitkan dengan _formkey.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/3-SingleChildScrollView.png" alt="Membangun kerangka UI dengan SingleChildScrollView" class="step-image">
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Input Judul Transaksi</h3>
+        </div>
+        <div class="step-body">
+          <p>Mengimplementasikan input kolom pertama menggunakan TextFormField untuk "Judul Transaksi". Input ini dilengkapi dengan logika validator bawaan untuk mengembalikan pesan error string ("Judul transaksi tidak boleh kosong") jika data yang dimasukkan kosong sebelum disimpan ke sistem.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/4-JudulTransaksi.png" alt="Input kolom pertama Judul Transaksi" class="step-image">
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">5</div>
+          <h3 class="step-title">Input Nominal Saldo</h3>
+        </div>
+        <div class="step-body">
+          <p>Mengimplementasikan input kolom kedua untuk "Nominal (Rp)" dengan parameter tambahan berupa keyboardType: TextInputType.number. Hal ini memastikan bahwa sistem memunculkan keyboard angka. Terdapat dua tahapan validasi pada poin ini: memeriksa apakah input kosong dan mengecek apakah teks yang diketik benar-benar angka bulat yang valid (dengan int.tryParse).</p>
+          <img src="img/imglaprak/laprak_AppMob_3/5-NominalSaldo.png" alt="Input kolom kedua Nominal Saldo" class="step-image">
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">6</div>
+          <h3 class="step-title">Input Kategori Dropdown</h3>
+        </div>
+        <div class="step-body">
+          <p>Mengimplementasikan input ketiga menggunakan DropdownButtonFormField untuk menampilkan menu pilihan kategori. Pilihan yang diklik oleh pengguna akan secara dinamis memperbarui nilai variabel _selectedCategory lewat pemanggilan metode setState() pada saat event onChanged terjadi.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/6-KategoriDropdown.png" alt="Input ketiga Kategori Dropdown" class="step-image">
+        </div>
+      </div>
+
+      <!-- Step 7 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">7</div>
+          <h3 class="step-title">Tombol Simpan Transaksi</h3>
+        </div>
+        <div class="step-body">
+          <p>Membuat ElevatedButton yang berfungsi sebagai tombol "Simpan Transaksi". Tombol ini memiliki event onPressed yang secara otomatis mengeksekusi semua logika validasi kolom input (_formKey.currentState!.validate()). Jika semua input divalidasi dengan berhasil, sistem akan memunculkan pop-up pemberitahuan berupa SnackBar berwarna hijau dengan informasi data sukses ditambahkan.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/7-TombolSimpan.png" alt="Membuat tombol Simpan Transaksi" class="step-image">
+        </div>
+      </div>
+
+      <!-- Step 8 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">8</div>
+          <h3 class="step-title">Mendefinisikan Main Dart</h3>
+        </div>
+        <div class="step-body">
+          <p>Mendefinisikan titik awal program pada file main.dart. Class MyApp menjalankan framework MaterialApp, menyembunyikan tulisan banner debug, menentukan tema warna dasar deep purple, dan memanggil AddTransactionScreen sebagai tampilan home screen awal.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/8-MainDart.png" alt="Mendefinisikan titik awal pada main.dart" class="step-image">
+        </div>
+      </div>
+
+      <!-- Step 9 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">9</div>
+          <h3 class="step-title">Output Praktikum</h3>
+        </div>
+        <div class="step-body">
+          <p>Output dari aplikasi setelah dijalankan.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/9-OutputPraktikum.png" alt="Output aplikasi" class="step-image">
+        </div>
+      </div>
+
+      <div class="text-center mt-5 mb-4">
+        <h2 style="color: #dbc2a6; font-weight: bold; border-bottom: 2px solid #99744a; padding-bottom: 10px; display: inline-block;">B. Latihan</h2>
+      </div>
+
+      <!-- Latihan 1 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Deklarasi _dateController</h3>
+        </div>
+        <div class="step-body">
+          <p>Menambahkan deklarasi _dateController dengan menggunakan tipe TextEditingController agar dapat menangkap teks dari fungsi kalender yang akan dibuat.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/10-DateController.png" alt="Deklarasi _dateController" class="step-image">
+        </div>
+      </div>
+
+      <!-- Latihan 2 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Dispose _dateController</h3>
+        </div>
+        <div class="step-body">
+          <p>Mengikutsertakan variabel _dateController ke dalam kerangka fungsi dispose() supaya alokasi memori untuk input tanggal ini juga ikut dibersihkan saat widget dimusnahkan.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/11-DateControllerDispose.png" alt="Dispose _dateController" class="step-image">
+        </div>
+      </div>
+
+      <!-- Latihan 3 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Widget Tanggal Transaksi</h3>
+        </div>
+        <div class="step-body">
+          <p>Menyisipkan widget TextFormField baru (Input 4) berlabel "Tanggal Transaksi" sebelum penempatan tombol Simpan. Widget ini menggunakan properti readOnly: true agar kolom tidak memunculkan keyboard, melainkan hanya bereaksi pada fungsi onTap yang akan mengeksekusi fungsi showDatePicker. Hasil pemilihan tanggal kemudian diformat dengan struktur dua digit menggunakan fungsi padLeft (menjadi bentuk format standar DD/MM/YYYY) dan nilainya disimpan ke dalam _dateController.text menggunakan setState(). Kolom ini juga diamankan dengan validator untuk mencegah input kosong.</p>
+          <img src="img/imglaprak/laprak_AppMob_3/12-DateTransaction.png" alt="Widget Tanggal Transaksi" class="step-image">
+        </div>
+      </div>
+
+      <!-- Latihan 4 -->
+      <div class="step-card">
+        <div class="step-header">
+          <div class="step-number">4</div>
+          <h3 class="step-title">Output Latihan</h3>
+        </div>
+        <div class="step-body">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <p><strong>Output berhasil</strong></p>
+              <img src="img/imglaprak/laprak_AppMob_3/13-OutputLatihan1.png" alt="Output berhasil" class="step-image">
+            </div>
+            <div class="col-md-6 text-center">
+              <p><strong>Output validasi wajib diisi</strong></p>
+              <img src="img/imglaprak/laprak_AppMob_3/13-OutputLatihan2.png" alt="Output validasi wajib diisi" class="step-image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Section Footer -->
+    <footer class="footer pb-3 text-center" style="background-color: #2b332b; border-top: 1px solid #414a37;">
+      <div class="container pt-4">
+        <div class="social-icons-footer mb-3">
+          <a href="https://www.linkedin.com/in/regi-heksa-462906320/"><i class="bi bi-linkedin" style="color: #dbc2a6;"></i></a>
+          <a href="https://github.com/Regi3051/"><i class="bi bi-github" style="color: #dbc2a6;"></i></a>
+          <a href="https://wa.me/+6281261265154"><i class="bi bi-whatsapp" style="color: #dbc2a6;"></i></a>
+          <a href="https://www.instagram.com/_kur00__/"><i class="bi bi-instagram" style="color: #dbc2a6;"></i></a>
+        </div>
+        <p style="color: #aeb4a2;"><small>© 2026 Regi Heksa Ananda. All rights reserved.</small></p>
+      </div>
+    </footer>
+    <!-- End of Section Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
