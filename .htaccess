@@ -1,0 +1,21 @@
+# .htaccess - Apache rewrite configuration for Portfolio Regi
+Options -Indexes
+DirectoryIndex index.html index.php
+RewriteEngine On
+
+# Redirect /admin and /admin/ to admin/index.php
+RewriteRule ^admin/?$ admin/index.php [L,QSA]
+RewriteRule ^admin/login/?$ admin/login.php [L,QSA]
+RewriteRule ^admin/reports/?$ admin/reports.php [L,QSA]
+RewriteRule ^admin/reports/create/?$ admin/report_form.php [L,QSA]
+RewriteRule ^admin/reports/edit/([0-9]+)/?$ admin/report_form.php?id=$1 [L,QSA]
+RewriteRule ^admin/logout/?$ admin/logout.php [L,QSA]
+
+# Redirect /report/slug to report_detail.php?slug=slug
+RewriteRule ^report/([a-zA-Z0-9_-]+)/?$ report_detail.php?slug=$1 [L,QSA]
+
+# Existing files and directories pass through
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+

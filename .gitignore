@@ -1,0 +1,4 @@
+# Git ignore for PWeb1 Portfolio
+data/sessions/*
+!data/sessions/.gitkeep
+
